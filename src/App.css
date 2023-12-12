@@ -3,6 +3,10 @@
   margin: 0 auto;
   padding: 1.5rem;
   text-align: center;
+  background-color: #fff;
+}
+img{
+  max-width: 100%;
 }
 
 .logo {
@@ -35,4 +39,59 @@
 
 .text-iron {
   color: #0a035a;
+}
+
+.itemCard{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px 20px;
+  border: solid 1px black;
+  color: black;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.content{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.content > * + * {
+  padding-top: 8px;
+}
+.destination{
+  font-weight: 700;
+  font-size: 24px;
+}
+.desc{
+  font-style: italic;
+}
+.price span{
+  font-weight: 700;
+}
+
+.extraFeatures{
+  display: flex;
+}
+.greatDeal, .premium, .allInclusive,.deleteBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  margin-right: 5px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.greatDeal{
+  background-color: #5ab76f;
+  color: black;
+}
+.allInclusive, .premium{
+  background-color: #0065c3;
+  color: white;
+}
+.deleteBtn{
+  color: black;
+  background-color: gray;
+  margin-top: 20px;
 }
