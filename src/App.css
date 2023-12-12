@@ -95,3 +95,8 @@ img{
   background-color: gray;
   margin-top: 20px;
 }
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
